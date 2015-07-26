@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "PSN Wishlist",
+  "description": "Add playstation network store games to a wishlist",
+  "version": "1.4",
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "default_popup": "popup.html",
+    "default_title": "PSN Wishlist"
+  },
+  "permissions": [
+    "activeTab",
+    "identity",
+    "storage",
+    "http://torib.io/*",
+    "https://store.playstation.com/",
+    "https://ajax.googleapis.com/",
+    "https://accounts.google.com/*",
+    "https://www.googleapis.com/*"    
+  ]
+}

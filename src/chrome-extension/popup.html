@@ -1,0 +1,40 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Enmanuel Toribio">
+    <title>PlayStation Network Store Wishlist</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+    <script src="js/jquery-2.0.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+  </head>
+  <body>
+    <div id="status"></div>
+    <!--<ul class="nav nav-list" id="list-of-items">
+    </ul>-->
+    <ul class="list-group" id="list-of-items">
+      
+    </ul>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/custom.css" rel="stylesheet" media="screen">    
+  </body>
+</html>
+
